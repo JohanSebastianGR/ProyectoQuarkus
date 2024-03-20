@@ -25,7 +25,6 @@ public class UsuarioServiceImpl implements IUsuarioService {
     UsuarioMapper usuarioMapper;
     @Inject
     UsuarioDao usuarioDao;
-
     @Transactional
     public UsuarioTypeResponse crearUsuario(UsuarioTypeInput usuarioTypeInput) {
         LOG.info("Inicia crear usuario");
@@ -40,7 +39,6 @@ public class UsuarioServiceImpl implements IUsuarioService {
             throw new ApplicationException(ERROR_SERVICIO + e.getMessage());
         }
     }
-
     @Transactional
     public UsuarioTypeResponse buscarUsuario(Integer idtblUser){
         LOG.info("Inicia la parte del metodo buscarUsuario Impl");
@@ -54,7 +52,6 @@ public class UsuarioServiceImpl implements IUsuarioService {
             throw new ApplicationException(ERROR_SERVICIO + e.getMessage());
         }
     }
-
     @Transactional
     public void eliminarUsuario(Integer idtblUser){
         LOG.info("Inicia el metodo eliminarUsuario Impl");
@@ -67,7 +64,6 @@ public class UsuarioServiceImpl implements IUsuarioService {
             throw new ApplicationException(ERROR_SERVICIO + e.getMessage());
         }
     }
-
     @Transactional
     public UsuarioTypeResponse editarUsuario(Integer idtblUser, UsuarioTypeInput usuarioTypeInput) {
         LOG.info("Inicia el metodo editarUsuario Impl");
@@ -86,7 +82,6 @@ public class UsuarioServiceImpl implements IUsuarioService {
             throw new ApplicationException(ERROR_SERVICIO + e.getMessage());
         }
     }
-
     @Transactional
     public List<UsuarioTypeResponse> listarTodosLosUsuario() {
         LOG.info("Inicia el metodo listarTodosLosUsuarios");
@@ -100,5 +95,4 @@ public class UsuarioServiceImpl implements IUsuarioService {
             throw new ApplicationException(ERROR_SERVICIO + e.getMessage());
         }
     }
-
 }

@@ -9,20 +9,16 @@ import org.modelmapper.ModelMapper;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @ApplicationScoped
 public class UsuarioMapper {
     public Usuario usuarioTypeToEntity(UsuarioTypeInput usuarioType) {
         return new ModelMapper().map(usuarioType, Usuario.class);
     }
-
     public UsuarioTypeResponse usuarioEntityToType(Usuario usuario) {
         return new ModelMapper().map(usuario, UsuarioTypeResponse.class);
     }
-
     public List<UsuarioTypeResponse> usuariosTypeListEntityToTypeResponse(List<Usuario> usuarios) {
         List<UsuarioTypeResponse> responses = new ArrayList<>();
-
         for (Usuario usuario : usuarios) {
             UsuarioTypeResponse response = new ModelMapper().map(usuario, UsuarioTypeResponse.class);
             responses.add(response);

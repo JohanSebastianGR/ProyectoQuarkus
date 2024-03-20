@@ -10,10 +10,8 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
-
-
 @JsonTypeName("UsuarioTypeResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2024-03-19T10:59:49.319244400-05:00[America/Bogota]", comments = "Generator version: 7.4.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2024-03-20T09:08:42.809150500-05:00[America/Bogota]", comments = "Generator version: 7.4.0")
 public class UsuarioTypeResponse   {
   private @Valid String name;
   private @Valid String lastname;
@@ -25,55 +23,42 @@ public class UsuarioTypeResponse   {
     this.name = name;
     return this;
   }
-
-  
   @JsonProperty("name")
   public String getName() {
     return name;
   }
-
   @JsonProperty("name")
   public void setName(String name) {
     this.name = name;
   }
-
   /**
    **/
   public UsuarioTypeResponse lastname(String lastname) {
     this.lastname = lastname;
     return this;
   }
-
-  
   @JsonProperty("lastname")
   public String getLastname() {
     return lastname;
   }
-
   @JsonProperty("lastname")
   public void setLastname(String lastname) {
     this.lastname = lastname;
   }
-
   /**
    **/
   public UsuarioTypeResponse createat(LocalDate createat) {
     this.createat = createat;
     return this;
   }
-
-  
   @JsonProperty("createat")
   public LocalDate getCreateat() {
     return createat;
   }
-
   @JsonProperty("createat")
   public void setCreateat(LocalDate createat) {
     this.createat = createat;
   }
-
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {

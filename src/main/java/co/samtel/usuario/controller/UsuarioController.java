@@ -29,7 +29,6 @@ public class UsuarioController implements V1UsuarioApi {
         LOG.info("Finaliza el metodo crearUsuario Controller");
         return Response.status(Response.Status.CREATED).entity(response).build();
     }
-
     @Override
     public Response editarUsuario(Integer idtblUser, UsuarioTypeInput usuarioTypeInput) {
         LOG.info("Inicia el metodo editarUsuario Controller");
@@ -43,7 +42,6 @@ public class UsuarioController implements V1UsuarioApi {
         LOG.info("Finaliza el metodo editarUsuario Controller");
         return Response.status(Response.Status.OK).entity(response).build();
     }
-
     @Override
     public Response buscarUsuario(Integer idtblUser){
         LOG.info("Inicia el metodo buscarUsuario Controller");
@@ -59,7 +57,6 @@ public class UsuarioController implements V1UsuarioApi {
         LOG.info("Finaliza el metodo buscarUsuario Controller");
         return Response.status(Response.Status.OK).entity(response).build();
     }
-
     @Override
     public Response eliminarUsuario(Integer idtblUser) {
         LOG.info("Inicia el metodo eliminarUsuario Controller");
@@ -73,7 +70,6 @@ public class UsuarioController implements V1UsuarioApi {
         LOG.info("Finaliza el metodo eliminarUsuario Controller");
         return Response.status(Response.Status.NO_CONTENT).entity(response).build();
     }
-
     @Override
     public Response listarTodosLosUsuario() {
         LOG.info("Inicia el metodo listarTodosLosUsuario Controller");
